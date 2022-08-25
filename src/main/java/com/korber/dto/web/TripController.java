@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TaxisController {
-
+public class TripController {
 
     @GetMapping("/list-yellow")
     public ResponseEntity<String> topZones() {
