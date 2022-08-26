@@ -13,6 +13,6 @@ CREATE TABLE public.trips (
     pick_up_zone bigint null,
     drop_off_zone bigint null,
     constraint trip_pkey primary key (id),
-    constraint trip_pick_up_zone foreign key (pick_up_zone) references public.zone(id),
-    constraint trip_drop_off_zone foreign key (drop_off_zone) references public.zone(id)
+    constraint trip_pick_up_zone foreign key (pick_up_zone) references public.zones(id),
+    constraint trip_drop_off_zone foreign key (drop_off_zone) references public.zones(id)
 );
