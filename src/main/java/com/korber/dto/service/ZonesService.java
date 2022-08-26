@@ -12,13 +12,15 @@ import java.util.Optional;
 @Slf4j
 public class ZonesService {
 
+    //TODO: Do the Custom exception
+
     @Autowired
     protected ZoneRepository repository;
 
 
     public void cenas() {
         final Optional<Zone> zone = repository.findById(Long.parseLong("1"));
-        // Do the .orElseThrow(()-> ServiceException());
+        //.orElseThrow(()-> ServiceException());
 
     }
 }

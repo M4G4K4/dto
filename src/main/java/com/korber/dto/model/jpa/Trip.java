@@ -1,15 +1,13 @@
 package com.korber.dto.model.jpa;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @Table(name = "trips")
 @NoArgsConstructor

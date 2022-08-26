@@ -1,9 +1,6 @@
 package com.korber.dto.model.jpa;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @Table(name = "zones")
 @NoArgsConstructor
