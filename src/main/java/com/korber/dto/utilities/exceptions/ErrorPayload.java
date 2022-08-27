@@ -15,13 +15,4 @@ public class ErrorPayload {
     private String message;
     private String description;
     private int status;
-
-    public static ErrorPayload error(final String message){
-        return error(message, null);
-    }
-
-    public static ErrorPayload error(final String message, final String description){
-        return error(message, description);
-    }
-
 }
