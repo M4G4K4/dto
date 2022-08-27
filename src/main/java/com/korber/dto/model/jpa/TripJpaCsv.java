@@ -12,7 +12,7 @@ import java.time.Instant;
 @Table(name = "trips")
 @NoArgsConstructor
 @AllArgsConstructor
-public class Trip {
+public class TripJpaCsv {
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -24,13 +24,12 @@ public class Trip {
     @Column(name = "drop_off_at")
     private Instant dropOffAt;
 
-    @OneToOne
-    @JoinColumn(name = "pickup_zone_id", referencedColumnName = "id")
-    private Zone pickupZone;
 
-    @OneToOne
-    @JoinColumn(name = "dropoff_zone_id", referencedColumnName = "id")
-    private Zone dropOffZone;
+    @Column(name = "pickup_zone_id")
+    private Long pickupZoneId;
+
+    @Column(name = "dropoff_zone_id")
+    private Long dropOffZoneId;
 
     private String type;
 }

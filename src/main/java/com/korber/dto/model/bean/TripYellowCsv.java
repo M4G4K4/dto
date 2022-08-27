@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class TripCsv {
+public class TripYellowCsv {
     @CsvBindByPosition(position = 1)
     private String pickupAt;
 
