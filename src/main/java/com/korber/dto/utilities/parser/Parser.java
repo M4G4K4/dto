@@ -1,4 +1,4 @@
-package com.korber.dto.service.utils;
+package com.korber.dto.utilities.parser;
 
 import org.springframework.web.multipart.MultipartFile;
 

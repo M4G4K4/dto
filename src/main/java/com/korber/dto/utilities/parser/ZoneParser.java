@@ -1,4 +1,4 @@
-package com.korber.dto.service.utils;
+package com.korber.dto.utilities.parser;
 
 import com.korber.dto.model.data.ZoneRepository;
 import com.korber.dto.model.jpa.Zone;
