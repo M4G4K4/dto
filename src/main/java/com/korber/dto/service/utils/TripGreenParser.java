@@ -3,7 +3,7 @@ package com.korber.dto.service.utils;
 import com.korber.dto.model.bean.TripGreenCsv;
 import com.korber.dto.model.comom.TripType;
 import com.korber.dto.model.data.TripCsvRepository;
-import com.korber.dto.model.jpa.TripJpaCsv;
+import com.korber.dto.model.bean.TripJpaCsv;
 import com.opencsv.bean.CsvToBeanBuilder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

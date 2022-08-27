@@ -1,4 +1,4 @@
-package com.korber.dto.model.jpa;
+package com.korber.dto.model.bean;
 
 import lombok.*;
 

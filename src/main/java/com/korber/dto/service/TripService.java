@@ -1,5 +1,6 @@
 package com.korber.dto.service;
 
+import com.korber.dto.model.comom.TripType;
 import com.korber.dto.model.data.TripRepository;
 import com.korber.dto.model.dto.trip.TripList;
 import com.korber.dto.model.dto.trip.TripRead;
@@ -29,7 +30,7 @@ public class TripService {
 
         Pageable pageable = PageRequest.of(page - 1, perPage, Sort.by(order).descending());
 
-        final Page<Trip> tripList = repository.findAll(pageable);
+        final Page<Trip> tripList = repository.findAllByType(pageable, TripType.YELLOW.name());
 
         final List<TripRead> tripReadList = tripList.get().map(mapper::tripToTripRead).toList();
 

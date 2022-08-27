@@ -1,6 +1,6 @@
 package com.korber.dto.model.data;
 
-import com.korber.dto.model.jpa.TripJpaCsv;
+import com.korber.dto.model.bean.TripJpaCsv;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
