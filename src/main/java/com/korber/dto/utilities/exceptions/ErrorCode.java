@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import javax.ws.rs.core.Response;
 
 public enum ErrorCode {
-    USER_NOT_FOUND("User not found",  Response.Status.BAD_REQUEST.getStatusCode());
+    ZONE_NOT_FOUND("Zone not found",  Response.Status.BAD_REQUEST.getStatusCode());
 
     private final String message;
     private final int httpStatusCode;
