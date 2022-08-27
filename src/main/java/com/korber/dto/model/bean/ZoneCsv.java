@@ -1,4 +1,4 @@
-package com.korber.dto.scripts.csv.bean;
+package com.korber.dto.model.bean;
 
 import com.opencsv.bean.CsvBindByPosition;
 import lombok.Getter;

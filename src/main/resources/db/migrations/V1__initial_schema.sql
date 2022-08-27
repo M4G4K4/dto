@@ -1,3 +1,5 @@
+create sequence if not exists public.hibernate_sequence start 1 increment 1;
+
 CREATE TABLE public.zones (
     id bigint not null,
     borough varchar(255) not null,

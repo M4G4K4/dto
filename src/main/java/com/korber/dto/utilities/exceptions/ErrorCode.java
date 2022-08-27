@@ -1,11 +1,10 @@
 package com.korber.dto.utilities.exceptions;
 
-import org.springframework.http.HttpStatus;
-
 import javax.ws.rs.core.Response;
 
 public enum ErrorCode {
-    ZONE_NOT_FOUND("Zone not found",  Response.Status.BAD_REQUEST.getStatusCode());
+    FILE_TYPE_NOT_SUPPORTED("File type not supported", Response.Status.BAD_REQUEST.getStatusCode()),
+    ZONE_NOT_FOUND("Zone not found", Response.Status.BAD_REQUEST.getStatusCode());
 
     private final String message;
     private final int httpStatusCode;
