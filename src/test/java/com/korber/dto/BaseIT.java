@@ -1,12 +1,9 @@
 package com.korber.dto;
 
 import io.restassured.RestAssured;
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.test.context.ActiveProfiles;
@@ -29,6 +26,7 @@ public abstract class BaseIT {
         RestAssured.port = port;
         RestAssured.baseURI = "http://localhost:" + port;
     }
+
     @Container
     private static final PostgreSQLContainer postgresContainer = new PostgreSQLContainer("postgres:latest");
 
