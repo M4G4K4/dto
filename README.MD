@@ -1,5 +1,4 @@
-# Korber Pharma Backend Challenge
-## DOT - Department of Transportation
+# DOT - Department of Transportation
 
 Considerations:
 
