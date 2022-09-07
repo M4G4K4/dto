@@ -26,9 +26,9 @@ public class TripService {
     @Autowired
     protected TripRepository repository;
 
-    public TripList getYellowTrips(final Integer page, final Integer perPage, final String order) {
+    public TripList getYellowTrips(final Integer page, final Integer perPage, final String orderBy) {
 
-        Pageable pageable = PageRequest.of(page - 1, perPage, Sort.by(order).descending());
+        final Pageable pageable = PageRequest.of(page - 1, perPage, Sort.by(orderBy).descending());
 
         final Page<Trip> tripList = repository.findAllByType(pageable, TripType.YELLOW.name());
 

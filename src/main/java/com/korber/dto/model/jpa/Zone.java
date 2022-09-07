@@ -2,10 +2,9 @@ package com.korber.dto.model.jpa;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -25,4 +24,8 @@ public class Zone {
 
     @Column(name = "service_zone")
     private String serviceZone;
+
+    // New implementation
+    @OneToMany(mappedBy = "zone")
+    private List<TripZone> trips = new ArrayList<>();
 }

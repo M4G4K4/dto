@@ -3,7 +3,6 @@ package com.korber.dto.service.events.csv;
 import com.korber.dto.model.dto.async.ReadCsvEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
-import org.springframework.web.multipart.MultipartFile;
 
 @Component
 public class ReadCsvEventPublisher {

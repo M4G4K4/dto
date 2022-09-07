@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -33,4 +35,13 @@ public class Trip {
     private Zone dropOffZone;
 
     private String type;
+
+
+
+
+
+    // New implementation
+    @OneToMany(mappedBy = "trip")
+    private List<TripZone> zones = new ArrayList<>();
+
 }
